@@ -26,9 +26,13 @@ export class LoginComponent implements OnInit {
   }
 
   login(event: Event) {
-    this.authService.login('test@gmail.com', 'passwordtest').subscribe((res) => {
-      this.router.navigate(['/employees']);
-    })
+    event.preventDefault();
+    if (this.form.valid) {
+      const value = this.form.value;
+      this.authService.login(value.email, value.password).subscribe((res) => {
+        this.router.navigate(['/employees']);
+      })
+    }
   }
 
   private buildForm() {

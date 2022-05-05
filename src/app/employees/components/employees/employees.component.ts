@@ -13,7 +13,7 @@ import { AuthService } from '../../../auth/auth.service';
 export class EmployeesComponent implements OnInit {
 
   employees: Employee[];
-  employeesFilter: Employee[];
+  employeesFilter = [];
   inputFilter = '';
 
   constructor( private route: Router, 

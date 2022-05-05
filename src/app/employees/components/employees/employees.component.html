@@ -28,6 +28,9 @@
             </div>
             
         </div>
+        <div *ngIf="employeesFilter && employeesFilter.length === 0">
+            <h2>No hay resultados de su busqueda</h2>
+        </div>
       </div>
     </div>
     <footer>
