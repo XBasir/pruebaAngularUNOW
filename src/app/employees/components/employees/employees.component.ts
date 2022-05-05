@@ -25,11 +25,12 @@ export class EmployeesComponent implements OnInit {
   ngOnInit() {
     this.employeeService.getEmployees().subscribe((res) => {
       this.employees = res;
-      this.employeesFilter = res;
+      this.employees.sort((a, b) => a.lastname.localeCompare(b.lastname));
+      this.employeesFilter = this.employees;
     })
   }
 
-  filterEmployee(event): void {
+  filterEmployee(): void {
     this.employeesFilter = [];
     Object.keys(this.employees).forEach(key => {
       let add = false;

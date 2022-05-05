@@ -13,7 +13,7 @@
       <h1 class="main-title">Directorio de empleados</h1>
       <mat-form-field appearance="outline" class="search-input">
         <mat-label>Buscar...</mat-label>
-        <input matInput type="text" (keyup)="filterEmployee($event)"  [(ngModel)]="inputFilter" >
+        <input matInput type="text" (keyup)="filterEmployee()"  [(ngModel)]="inputFilter" >
       </mat-form-field>
       <div class="wrapper">
         <div *ngFor="let employee of employeesFilter" class="employee" >
