@@ -17,4 +17,8 @@ export class AuthService {
     localStorage.setItem('logged', 'false');
     return this.httpClient.get('/assets/mockapi/logout.json')
   }
+
+  users(){
+    return this.httpClient.get('/assets/mockapi/user.json')
+  }
 }

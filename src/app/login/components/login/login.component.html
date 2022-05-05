@@ -27,6 +27,8 @@
               </div>
             </div>
           </mat-card-content>
+          <p style="color: red;" *ngIf="!correctUser">Usuario no encontrado. El usuario de prueba es:</p>
+          <p style="color: red;" *ngIf="!correctUser">Correo: admin@admin.com -  Contrasena: 1234</p>
           <mat-card-actions>
             <button class="login-button" [disabled]="form.invalid" mat-raised-button type="submit">Acceder</button>
           </mat-card-actions>
