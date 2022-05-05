@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Xavier",
+        "lastname": "Basir Jeffrey",
+        "charge": "Developer",
+        "phone": "+584249276295",
+        "mail": "xavierfiv@gmail.com",
+        "image": "/assets/employees/emp1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Juan",
+        "lastname": "Garcia Garcia",
+        "charge": "CTO",
+        "phone": "+3242343",
+        "mail": "juan@gmail.com",
+        "image": "/assets/employees/emp2.png"
+    },
+    {
+        "id": 3,
+        "name": "Luis",
+        "lastname": "Perez Romero",
+        "charge": "CEO",
+        "phone": "+345345",
+        "mail": "luis@gmail.com",
+        "image": "/assets/employees/emp2.png"
+    },
+    {
+        "id": 4,
+        "name": "Leonardo",
+        "lastname": "Hidalgo",
+        "charge": "Project Maneger",
+        "phone": "+234235",
+        "mail": "leo@gmail.com",
+        "image": "/assets/employees/emp2.png"
+    },
+    {
+        "id": 5,
+        "name": "Roxana",
+        "lastname": "Salazar Yeguez",
+        "charge": "Developer",
+        "phone": "+51435346",
+        "mail": "roxana@gmail.com",
+        "image": "/assets/employees/emp2.png"
+    },
+    {
+        "id": 6,
+        "name": "Diana",
+        "lastname": "Rojas",
+        "charge": "Developer",
+        "phone": "+265156",
+        "mail": "diana@gmail.com",
+        "image": "/assets/employees/emp2.png"
+    },
+    {
+        "id": 7,
+        "name": "Marbella",
+        "lastname": "Yanez Perez",
+        "charge": "Recruiter",
+        "phone": "+34534543",
+        "mail": "marbe@gmail.com",
+        "image": "/assets/employees/emp2.png"
+    }
+ ]

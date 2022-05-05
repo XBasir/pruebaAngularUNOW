@@ -1,81 +1,62 @@
 :host {
-    font-family: -apple-system, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  height: 100vh;
+  background-color: #1854a4;
+  display: block;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 8px 0;
-  }
+body {
+  margin: 0px !important;
+}
 
-  p {
-    margin: 0;
+form {
+  width: 90%;
+  margin: 0px auto;
+  position: relative;
+  top: 20px;
+  mat-form-field {
+    width: 100%;
   }
-
-  .spacer {
-    flex: 1;
+  mat-card{
+    padding: 40px;
   }
-
-  .toolbar {
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  form{
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #1854a4;
-    color: white;
-    font-size: 16px;
-    font-weight: 400;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
   }
+}
 
-  .logo{
-    margin-left: 20px;
+/* Large and up */
+@media screen and (min-width: 64em) {
+  form {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
   }
+}
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
+.background {  
+  height: 100%;  
+  color: #fff;
+  background-image: url("../../../../assets/background/background.jpg");  
+  background-size: 100%;  
+  background-size: cover;  
+}  
 
-  .toolbar #twitter-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-  footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
-  }
-
-  @media screen and (max-width: 767px) {
-
-  }
-
-  @media screen and (max-width: 575px) {
-
-  }
+.login-button{
+  width: 100%;
+  margin: 20px;
+  background-color: #1854a4;
+  color: white;
+}

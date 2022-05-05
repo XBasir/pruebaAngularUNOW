@@ -1,1 +1,36 @@
-<p>login</p>
+
+<div class="background">
+    <form [formGroup]="form" (ngSubmit)="login($event)">
+        <mat-card>
+          <div style="height: 60px; width: 100%; padding-top: 24px;">
+            <h2 style="color: #1854a4; font-size: 24px; text-align: center;">Endalia</h2>
+          </div>
+          <div style="height: 70px; width: 100%; padding-top: 24px;">
+            <h2 style="font-weight: bold; margin-bottom: 2px;">Bienvenido/a</h2>
+            <p style="margin-bottom: 4px;">Introduce tus credenciales para acceder</p>
+          </div>
+          <mat-card-content>
+            <div class="row">
+              <div class="col-xs">
+                <mat-form-field>
+                  <mat-label>Usuario</mat-label>
+                  <input placeholder="email" formControlName="email" matInput type="email">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs">
+                <mat-form-field>
+                  <mat-label>Contransena</mat-label>
+                  <input placeholder="password" formControlName="password" matInput type="password">
+                </mat-form-field>
+              </div>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button class="login-button" [disabled]="form.invalid" mat-raised-button type="submit">Acceder</button>
+          </mat-card-actions>
+        </mat-card>
+      </form>
+</div>
+

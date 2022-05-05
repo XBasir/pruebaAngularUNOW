@@ -20,6 +20,10 @@ export class AdminGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): any {
-        return true;
+        if(localStorage.getItem('logged') === 'true'){
+            return true;
+        }else{
+            this.router.navigate(['/login']);
+        }
     }
 }

@@ -13,6 +13,7 @@ const routes: Routes = [
       },
       {
         path: 'employees',
+        canActivate: [AdminGuard],
         loadChildren: () => import('./employees/employees.module').then(m => m.EmployeesModule)
       },
       {

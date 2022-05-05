@@ -42,12 +42,11 @@
     margin-left: 20px;
   }
 
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 16px;
+  .logout-box {
+      margin-right: 20px;
   }
 
-  .toolbar #twitter-logo:hover {
+  .toolbar .logout-box:hover {
     opacity: 0.8;
   }
 
@@ -55,27 +54,75 @@
     display: flex;
     margin: 82px auto 32px;
     padding: 0 16px;
-    max-width: 960px;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 
-  svg.material-icons {
-    height: 24px;
-    width: auto;
+  .main-title {
+      font-weight: 800;
+      font-size: 32px;
+      margin-bottom: 24px;
+  }
+
+  .search-input {
+      width: 50%;
+      margin-bottom: 24px;
   }
 
   footer {
     margin-top: 8px;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
     line-height: 20px;
   }
 
-  @media screen and (max-width: 767px) {
-
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (max-width: 575px) {
+  .employee {
+    display: flex; 
+    margin: 10px;
+    background-color: rgb(248, 248, 248);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+  }
 
+  .info {
+      margin-top: 12px;
+      margin-left: 5px;
+  }
+
+  .emp-name {
+      font-weight: bold;
+      font-size: 16px;
+  }
+
+  .emp-lastname{
+    font-weight: bold;
+    font-size: 20px
+  }
+
+  .emp-charge{
+    font-size: 16px
+  }
+
+  .emp-phone{
+      font-size: 12px;
+      color: gray;
+  }
+
+  .emp-mail{
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+}
+
+  .emp-image{
+    border-radius: 50%;
+    margin: 10px;
+    max-height: 90px;
   }
